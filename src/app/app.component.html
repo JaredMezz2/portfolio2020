@@ -1,23 +1,29 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row d-block">
     <div class="col-sm"></div>
     <app-link-tab class="col-sm col-xs"></app-link-tab>
     <div class="col-sm"></div>
   </div>
+
 <!--Large Screen version, vertical buttons-->
-  <div class="row d-none d-sm-block" >
-    <app-resume-tab class="col-sm"></app-resume-tab>
-    <app-main-name class="col-sm"></app-main-name>
-    <app-contact-tab class="col-sm"></app-contact-tab>
-  </div>
-<!--  Small screen version, horizontal buttons-->
-  <div class="row d-block d-sm-none">
-    <div class="col">
+  <div class="d-none d-sm-block">
+    <div class="row">
+      <app-resume-tab class="col-sm"></app-resume-tab>
       <app-main-name class="col-sm"></app-main-name>
-      <app-resume-tab class="col-sm horText"></app-resume-tab>
-      <app-contact-tab class="col-sm horText"></app-contact-tab>
+      <app-contact-tab class="col-sm"></app-contact-tab>
     </div>
   </div>
+<!--  Small screen version, horizontal buttons-->
+  <div class="d-block d-sm-none">
+    <div class="row">
+      <div class="col">
+        <app-main-name class="col-sm"></app-main-name>
+        <app-resume-tab class="col-sm horText"></app-resume-tab>
+        <app-contact-tab class="col-sm horText"></app-contact-tab>
+      </div>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-sm"></div>
     <app-portfolio-tab class="col-sm col-xs"></app-portfolio-tab>
