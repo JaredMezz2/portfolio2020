@@ -10,10 +10,35 @@ body {
 }
 
 h3 {
-  border: 1px solid black;
+  letter-spacing: 1.5vh;
   margin: 0 !important;
+  padding: 1%;
 }
 
 .col-sm {
   padding: 0 !important;
+  align-items: center;
+  text-align: center;
+}
+
+.pullTab {
+  border: 1px solid black;
+}
+
+.col-xs {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.vertText {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  /*border in here as we dont want the entire length of the div, like we do in the top and bottom ones*/
+  border: 2px solid black;
+  height: 50vh;
+  padding: 0 2.5%; /* i want 2.5 left and right this may be incorrect */
+}
+
+.horText h3 {
+  border: 1px solid black;
 }
