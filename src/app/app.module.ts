@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainNameComponent } from './main-name/main-name.component';
 import { PortfolioTabComponent } from './portfolio-tab/portfolio-tab.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { LinkTabComponent } from './link-tab/link-tab.component';
+import { ContactTabComponent } from './contact-tab/contact-tab.component';
+import { ResumeTabComponent } from './resume-tab/resume-tab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNameComponent,
-    PortfolioTabComponent
+    PortfolioTabComponent,
+    PortfolioComponent,
+    LinkTabComponent,
+    ContactTabComponent,
+    ResumeTabComponent
   ],
   imports: [
     BrowserModule,
