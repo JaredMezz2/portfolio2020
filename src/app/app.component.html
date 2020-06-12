@@ -30,7 +30,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" [ngClass]="linksOpen ? 'd-none' : 'failTest'">
     <div class="col-sm"></div>
     <app-portfolio-tab class="col-sm col-xs"></app-portfolio-tab>
     <div class="col-sm"></div>

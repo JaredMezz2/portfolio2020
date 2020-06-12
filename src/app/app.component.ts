@@ -7,21 +7,23 @@ declare var jQuery: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-
+  linksOpen = false;
+  portfolioOpen = false;
   ngOnInit(): void {
-    let portfolioClosed = true;
-    let linksClosed = true;
     ($ => {
       $(document).ready(() => {
         // const portfolioTab = $('#portfolioTab');
         $('#portfolioTab').click($ => {
-          portfolioClosed = !portfolioClosed;
+          this.portfolioOpen = !this.portfolioOpen;
           hideSideElements();
         });
 
-        $('#linkTab').click(function(){
-          $('.slideDown').slideToggle();
-        })
+        $('#linkTab').click($ => {
+          console.log("here");
+          this.linksOpen = !this.linksOpen;
+          jQuery('.slideDown').slideToggle();   // $ not working here, something to do with not
+                                                // explicitly declaring $ as the import
+        });
         console.log('JQUERY SAYS hi from app');
       });
     })(jQuery);

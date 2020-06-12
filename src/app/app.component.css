@@ -17,3 +17,11 @@
   height: 100%;
   width: 100%;
 }
+
+.inTab {
+  display: none;
+}
+
+.failTest {
+  color: red;
+}
