@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var jQuery: any;
 
 @Component({
   selector: 'app-portfolio-tab',
@@ -10,6 +11,15 @@ export class PortfolioTabComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    ($ => {
+      $(document).ready(() => {
+        console.log('JQUERY SAYS HELLO');
+        $('#extendPortfolio').click($ => {
+          console.log('clicked');
+        });
+      });
+    })(jQuery);
+
   }
 
 }
