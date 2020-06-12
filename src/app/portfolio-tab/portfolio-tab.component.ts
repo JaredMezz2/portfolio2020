@@ -8,18 +8,30 @@ declare var jQuery: any;
 })
 export class PortfolioTabComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+    let status = false;
     ($ => {
       $(document).ready(() => {
-        console.log('JQUERY SAYS HELLO');
+        // console.log('JQUERY SAYS HELLO');
+        const portfolioTab = $('#portfolioTab');
         $('#extendPortfolio').click($ => {
-          console.log('clicked');
+          // console.log(this);
+          // portfolioTab.toggleClass('d-block');
+          // hideElement(this);
+          // (this).toggleClass('d-block');
         });
       });
     })(jQuery);
 
+    function hideElement(elem){
+      status = !status;
+      console.log('test');
+      console.log(elem);
+    }
   }
+
+
 
 }
