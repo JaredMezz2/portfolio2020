@@ -9,36 +9,60 @@ body {
   background-color: #fbf7f5 !important;
 }
 
+h1 {
+  text-align: center;
+  font-size: 4em !important;
+
+/*  drop shadow*/
+  text-shadow: 0 0 5px rgba(150, 150, 150, 1);
+}
+
 h3 {
   letter-spacing: 1.5vh;
   margin: 0 !important;
-  padding: 1%;
+  padding: 2%;
+  height: 100%;
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
 }
 
 .col-sm {
   padding: 0 !important;
   align-items: center;
-  text-align: center;
+}
+
+.rightLink {
+  text-align: right;
 }
 
 .pullTab {
-  border: 1px solid black;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
-.col-xs {
-  border: 1px solid black;
-  text-align: center;
+.clickTab {
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 
-.vertText {
+.vertTextLeft {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  /*border in here as we dont want the entire length of the div, like we do in the top and bottom ones*/
+  padding-left: 0.5vw !important;
+}
+
+.vertTextRight {
   writing-mode: vertical-rl;
   text-orientation: upright;
   /*border in here as we dont want the entire length of the div, like we do in the top and bottom ones*/
-  border: 2px solid black;
-  height: 50vh;
-  padding: 0 2.5%; /* i want 2.5 left and right this may be incorrect */
+  padding-right: 0.5vw !important;
 }
 
-.horText h3 {
-  border: 1px solid black;
+.midRow {
+  height: 50vh;
 }

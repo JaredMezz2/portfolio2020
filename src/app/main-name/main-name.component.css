@@ -1,4 +1,6 @@
-.container {
-  background: white;
-  padding: 5%;
+.centerName {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
