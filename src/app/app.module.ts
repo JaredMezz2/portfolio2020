@@ -10,6 +10,7 @@ import { LinkTabComponent } from './link-tab/link-tab.component';
 import { ContactTabComponent } from './contact-tab/contact-tab.component';
 import { ResumeTabComponent } from './resume-tab/resume-tab.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PortfolioComponent,
     LinkTabComponent,
     ContactTabComponent,
-    ResumeTabComponent
+    ResumeTabComponent,
+    PortfolioItemComponent
   ],
   imports: [
     BrowserModule,
