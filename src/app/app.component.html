@@ -1,8 +1,33 @@
 <div class="container-fluid">
-  <div>
+  <div class="d-flex flex-column full-height">
     <div class="row">
       <div class="slideDown">
-        <h2>test</h2>
+        <div class="row linkRow">
+          <div class="card-deck">
+            <div class="card">
+              <img src="https://thehappypuppysite.com/wp-content/uploads/2018/07/doggy-daycare-long-1024x555.jpg" alt="" class="card-img-top img-thumbnail">
+              <div class="card-body">
+                <h5 class="card-title text-center">Title</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://thehappypuppysite.com/wp-content/uploads/2018/07/doggy-daycare-long-1024x555.jpg" alt="" class="card-img-top img-thumbnail">
+              <div class="card-body">
+                <h5 class="card-title text-center">Title</h5>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://thehappypuppysite.com/wp-content/uploads/2018/07/doggy-daycare-long-1024x555.jpg" alt="" class="card-img-top img-thumbnail">
+              <div class="card-body">
+                <h5 class="card-title text-center">Title</h5>
+              </div>
+            </div>
+          </div>
+<!--          <div class="col-sm"><p class="text-center">test</p></div>-->
+<!--          <div class="col-sm">test</div>-->
+<!--          <div class="col-sm">test</div>-->
+<!--          <div class="col-sm">test</div>-->
+        </div>
       </div>
     </div>
     <div class="row">
@@ -16,9 +41,9 @@
 <!--Large Screen version, vertical buttons-->
   <div class="d-none d-sm-block">
     <div class="row midRow">
-      <app-resume-tab class="col-sm vertTextLeft .animated p"></app-resume-tab>
+      <app-resume-tab class="col-sm vertTextLeft" [ngClass]="sidesHidden ? 'clickTest' : 'failTest'"></app-resume-tab>
       <app-main-name class="col-sm"></app-main-name>
-      <app-contact-tab class="col-sm vertTextRight rightLink"></app-contact-tab>
+      <app-contact-tab class="col-sm vertTextRight rightLink" [ngClass]="sidesHidden ? 'clickTest' : 'failTest'"></app-contact-tab>
     </div>
   </div>
 <!--  Small screen version, horizontal buttons-->
