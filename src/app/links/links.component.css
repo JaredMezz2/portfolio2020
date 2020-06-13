@@ -1,0 +1,9 @@
+#linkCards {
+  padding: 2%;
+}
+
+#linkCards .card-deck {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
