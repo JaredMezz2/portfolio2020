@@ -55,6 +55,16 @@
   transition: 1s;
 }
 
+.mobileRight {
+  left: 125%;
+  transition: 1s;
+}
+
+.mobileLeft {
+  left: -125%;
+  transition: 1s;
+}
+
 .linkRow {
   padding: 2%;
 }
