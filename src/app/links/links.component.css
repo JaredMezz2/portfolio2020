@@ -11,4 +11,50 @@
 
 .card {
   margin: 0 10%;
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.36);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.36);
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.36);
+}
+
+.card:hover {
+  background: rgba(0, 0, 0, 0.55);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.Twitter {
+  background: rgba(29, 161, 242, 0.25);
+}
+
+.Twitter:hover {
+  background: rgba(29, 161, 242, 0.55);
+  -webkit-box-shadow: 0px 0px 34px 0px rgba(29,161,242,0.77);
+  -moz-box-shadow: 0px 0px 34px 0px rgba(29,161,242,0.77);
+  box-shadow: 0px 0px 34px 0px rgba(29,161,242,0.77);
+}
+
+.Github {
+  background: rgba(215, 58, 73, 0.25);
+}
+
+.Github:hover {
+  background: rgba(215, 58, 73, 0.55);
+  -webkit-box-shadow: 0px 0px 34px 0px rgba(215,58,73,0.77);
+  -moz-box-shadow: 0px 0px 34px 0px rgba(215,58,73,0.77);
+  box-shadow: 0px 0px 34px 0px rgba(215,58,73,0.77);
+}
+
+.LinkedIn {
+  background: rgba(0, 119, 181, 0.25);
+}
+
+.LinkedIn:hover {
+  background: rgba(0, 119, 181, 0.55);
+  -webkit-box-shadow: 0px 0px 34px 0px rgba(0,119,181,0.77);
+  -moz-box-shadow: 0px 0px 34px 0px rgba(0,119,181,0.77);
+  box-shadow: 0px 0px 34px 0px rgba(0,119,181,0.77);
 }
