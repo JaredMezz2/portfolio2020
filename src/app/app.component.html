@@ -13,9 +13,9 @@
 <!--Large Screen version, vertical buttons-->
   <div class="d-none d-sm-block">
     <div class="row midRow">
-      <app-resume-tab class="col-sm vertTextLeft" [ngClass]="sidesHidden ? 'clickTest' : 'failTest'"></app-resume-tab>
+      <app-resume-tab class="col-sm vertTextLeft" [ngClass]="sidesHidden ? 'd-none' : 'failTest'"></app-resume-tab>
       <app-main-name class="col-sm"></app-main-name>
-      <app-contact-tab class="col-sm vertTextRight rightLink" [ngClass]="sidesHidden ? 'clickTest' : 'failTest'"></app-contact-tab>
+      <app-contact-tab class="col-sm vertTextRight rightLink" [ngClass]="sidesHidden ? 'd-none' : 'failTest'"></app-contact-tab>
     </div>
   </div>
 <!--  Small screen version, horizontal buttons-->
@@ -27,6 +27,7 @@
     </div>
   </div>
 
+<!--  TODO: onclick of this, maybe set height to 0 of row with transition to get the name to move smoothly?-->
   <div class="row" [ngClass]="linksOpen ? 'd-none' : 'failTest'">
     <div class="col-sm"></div>
     <app-portfolio-tab class="col-sm col-xs"></app-portfolio-tab>
