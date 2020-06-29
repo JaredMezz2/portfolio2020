@@ -13,15 +13,20 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     ($ => {
       $(document).ready(() => {
-        // const portfolioTab = $('#portfolioTab');
+        // on portfolio tab click
         $('#portfolioTab').click($ => {
           this.portfolioOpen = !this.portfolioOpen;
           hideSideElements(this);
         });
 
+        // on link tab click
         $('#linkTab').click($ => {
           console.log('here');
           this.linksOpen = !this.linksOpen;
+          console.log(this.linksOpen);
+          // if (this.linksOpen) {
+          //   $('#linkTab').attr('routerLink', '');
+          // }
           jQuery('.slideDown').slideToggle();
           hideSideElements(this);
         });
@@ -31,7 +36,7 @@ export class AppComponent implements OnInit{
 
     function hideSideElements(app){
       app.sidesHidden = !app.sidesHidden;
-      console.log('hiding side elements');
+      console.log('toggling side elements');
     }
   }
 }

@@ -1,10 +1,11 @@
 <div class="container-fluid">
   <div class="d-flex flex-column">
-    <app-links class="slideDown"></app-links>
+
+    <router-outlet></router-outlet>
 
     <div class="row topRow">
       <div class="col-sm"></div>
-      <app-link-tab class="col-sm col-xs"></app-link-tab>
+      <app-link-tab class="col-sm col-xs" routerLink="/links"></app-link-tab>
       <div class="col-sm"></div>
     </div>
 
@@ -28,11 +29,11 @@
   </div>
 
 <!--  TODO: onclick of this, maybe set height to 0 of row with transition to get the name to move smoothly?-->
-  <div class="row" [ngClass]="linksOpen ? 'slideD' : 'failTest'">
+  <div class="row" [ngClass]="linksOpen ? 'slide-d' : 'failTest'">
     <div class="col-sm"></div>
     <app-portfolio-tab class="col-sm col-xs"></app-portfolio-tab>
     <div class="col-sm"></div>
   </div>
 
-<!--  <app-portfolio></app-portfolio>-->
+  <app-portfolio></app-portfolio>
 </div>
