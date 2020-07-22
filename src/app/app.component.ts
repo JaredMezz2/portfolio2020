@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 declare var jQuery: any;
+// declare var $el: JQuery;  // This is missing in your code, you have to declare $ as variable.
 
 @Component({
   selector: 'app-root',
@@ -21,12 +22,15 @@ export class AppComponent implements OnInit{
 
         // on link tab click
         $('#linkTab').click($ => {
-          console.log('here');
           this.linksOpen = !this.linksOpen;
           console.log(this.linksOpen);
-          // if (this.linksOpen) {
-          //   $('#linkTab').attr('routerLink', '');
-          // }
+          if (this.linksOpen) {
+            // TODO: no longer a jquery issue, but not applying to what I want it to. Doesnt seem to be applying anywhere
+            console.log(jQuery('#linkTab'));
+            jQuery('#linkTab').attr('routerLink', '/');
+          } else {
+            jQuery('#linkButton').attr('routerLink', '/links');
+          }
           jQuery('.slideDown').slideToggle();
           hideSideElements(this);
         });

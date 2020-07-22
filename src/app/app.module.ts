@@ -14,6 +14,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
 import { LinkItemComponent } from './link-item/link-item.component';
 import { LinksComponent } from './links/links.component';
+import { BlankComponent } from './blank/blank.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LinksComponent } from './links/links.component';
     ResumeTabComponent,
     PortfolioItemComponent,
     LinkItemComponent,
-    LinksComponent
+    LinksComponent,
+    BlankComponent
   ],
   imports: [
     BrowserModule,
